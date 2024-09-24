@@ -6,6 +6,19 @@ from app.knowledge_refiner import KnowledgeRefiner
 from app.response_generator import ResponseGenerator
 
 class QueryProcessor:
+    """
+    A class that processes a query by retrieving relevant documents, evaluating their relevance, performing web searches if needed,
+    and generating a final response using a language model (LLM).
+
+    This class integrates multiple components: a document retriever, an evaluator for document relevance, a web searcher for supplemental information,
+    and a response generator that formulates the final answer based on the query and gathered knowledge.
+
+    Attributes:
+        retriever (DocumentRetriever): A document retriever that retrieves relevant documents based on the query.
+        evaluator (Evaluator): A relevance evaluator that scores the relevance of retrieved documents.
+        web_searcher (WebSearcher): A web searcher that performs web searches and refines the search results.
+        llm: A language model used to generate the final response.
+    """
     def __init__(self, retriever: DocumentRetriever, evaluator: Evaluator, web_searcher: WebSearcher, llm):
         self.retriever = retriever
         self.evaluator = evaluator
@@ -18,7 +31,7 @@ class QueryProcessor:
 
         Args:
             query (str): The query string.
-            eval_documents (bool): Whether to evaluate documents' relevance.
+            eval_documents (bool): Whether to calculate evaluation scores or just use the retrieved documents.
 
         Returns:
             str: The generated response.

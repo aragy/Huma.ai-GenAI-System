@@ -4,20 +4,20 @@ import requests
 # Defina a URL da API backend
 BACKEND_URL = 'http://backend:8000/query'
 
-st.title("Chatbot com Recuperação Aumentada por Geração (RAG)")
+st.title("POC chatbot to Huma.AI assessent")
 
 # Entrada para a consulta do usuário
-query = st.text_input("Digite sua consulta:")
+query = st.text_input("type your question:")
 
 # Seleção do modelo
 model = st.selectbox(
-    "Selecione o modelo para processar sua consulta:",
+    "Select the model:",
     ('gpt', 'claude', 'gemini')
 )
 
-if st.button("Enviar"):
+if st.button("Sent"):
     if query.strip() == "":
-        st.warning("Por favor, insira uma consulta.")
+        st.warning("Please, do a question.")
     else:
         # Prepare os dados para enviar
         payload = {
@@ -31,11 +31,11 @@ if st.button("Enviar"):
             response.raise_for_status()  # Levanta uma exceção para erros HTTP
 
             data = response.json()
-            answer = data.get('answer', 'Nenhuma resposta recebida.')
+            answer = data.get('answer', 'No answer received.')
 
             # Exiba a resposta
-            st.markdown("### Resposta:")
+            st.markdown("### Ansuwer:")
             st.write(answer)
 
         except requests.exceptions.RequestException as e:
-            st.error(f"Ocorreu um erro: {e}")
+            st.error(f"Error: {e}")
