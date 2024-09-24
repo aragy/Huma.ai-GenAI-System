@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pandas
+pydantic
+langchain
+langchain_community
+langchain_openai
+langchain_anthropic
+langchain_google_genai
+deepeval
+rank_bm25
+faiss-cpu
+duckduckgo-search
+python-dotenv

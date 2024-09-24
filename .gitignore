@@ -1,0 +1,12 @@
+backend/.env
+backend/app/__pycache__/__init__.cpython-39.pyc
+backend/app/__pycache__/evaluator.cpython-39.pyc
+backend/app/__pycache__/knowledge_refiner.cpython-39.pyc
+backend/app/__pycache__/main.cpython-39.pyc
+backend/app/__pycache__/models.cpython-39.pyc
+backend/app/__pycache__/query_processor.cpython-39.pyc
+backend/app/__pycache__/query_rewriter.cpython-39.pyc
+backend/app/__pycache__/response_generator.cpython-39.pyc
+backend/app/__pycache__/retriever.cpython-39.pyc
+backend/app/__pycache__/utils.cpython-39.pyc
+backend/app/__pycache__/web_searcher.cpython-39.pyc
