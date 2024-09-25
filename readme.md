@@ -1,4 +1,4 @@
-# RAG Chatbot Project with FastAPI and Streamlit
+# Huma.AI - RAG Chatbot POC 
 
 This project implements a Retrieval-Augmented Generation (RAG) chatbot as part of a test for Huma.ai. It allows users to interact with advanced language models (GPT, Claude, and Gemini) to process queries. The system consists of a backend served by FastAPI and a frontend built with Streamlit for user interaction.
 
@@ -117,13 +117,13 @@ The backend requires API keys to access the language models (GPT, Claude, and Ge
 
 2. Add Your API Keys to the `.env` File:
 
-    Open the .env file in your preferred text editor and add the following lines, replacing the placeholders with your actual API keys:
+  Open the .env file in your preferred text editor and add the following lines, replacing the placeholders with your actual API keys:
 
-        ```bash
-        OPENAI_API_KEY=your_openai_api_key
-        ANTHROPIC_API_KEY=your_anthropic_api_key
-        GOOGLE_GENAI_API_KEY=your_google_genai_api_key
-        ```
+  ```bash
+  OPENAI_API_KEY=your_openai_api_key
+  ANTHROPIC_API_KEY=your_anthropic_api_key
+  GOOGLE_GENAI_API_KEY=your_google_genai_api_key
+  ```
 
 ## Running the Application
 At the root of the project, run the following command to build and start the containers:
