@@ -38,7 +38,7 @@ This project is designed to showcase the capabilities of combining retrieval mec
 - **Docker Compose Orchestration**: Simplifies configuration and running of multiple containers.
 
 ## Project Structure
-
+```bash
 Huma.ai-GenAI-System/
 ├── backend/
 │   ├── app/
@@ -65,7 +65,7 @@ Huma.ai-GenAI-System/
 ├── docker-compose.yml
 └── README.md
 
-
+```
 
 ### Description of Directories and Files
 
