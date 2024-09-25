@@ -26,18 +26,18 @@ GOOGLE_GENAI_API_KEY = os.getenv("GOOGLE_GENAI_API_KEY")
 
 llms = {
     'gpt': ChatOpenAI(
-        model="gpt-4",
+        model="gpt-4o-mini",
         max_tokens=1000,
         temperature=0,
         openai_api_key=OPENAI_API_KEY
     ),
     'claude': ChatAnthropic(
         temperature=0,
-        model_name='claude-2',
+        model_name='claude-3-5-sonnet-20240620',
         anthropic_api_key=ANTHROPIC_API_KEY
     ),
     'gemini': ChatGoogleGenerativeAI(
-        model="gemini-1.5",
+        model="gemini-1.5-flash",
         temperature=0,
         google_genai_api_key=GOOGLE_GENAI_API_KEY
     )

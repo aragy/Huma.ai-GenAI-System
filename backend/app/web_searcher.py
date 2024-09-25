@@ -1,7 +1,7 @@
 import re
 import json
 from typing import List, Tuple
-from langchain.tools import DuckDuckGoSearchResults
+from langchain_community.tools import DuckDuckGoSearchResults
 from app.query_rewriter import QueryRewriter
 from app.knowledge_refiner import KnowledgeRefiner
 

@@ -4,7 +4,7 @@ import requests
 # Defina a URL da API backend
 BACKEND_URL = 'http://backend:8000/query'
 
-st.title("POC chatbot to Huma.AI assessent")
+st.title("POC chatbot to Huma.AI assessment")
 
 # Entrada para a consulta do usuário
 query = st.text_input("type your question:")
@@ -34,7 +34,7 @@ if st.button("Sent"):
             answer = data.get('answer', 'No answer received.')
 
             # Exiba a resposta
-            st.markdown("### Ansuwer:")
+            st.markdown("### Answer:")
             st.write(answer)
 
         except requests.exceptions.RequestException as e:
