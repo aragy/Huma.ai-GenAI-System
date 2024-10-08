@@ -28,15 +28,6 @@ The system allows users to:
 
 This project is designed to showcase the capabilities of combining retrieval mechanisms with advanced language models to provide informative and accurate answers.
 
-## Features
-
-- **Backend with FastAPI**: Serves the retrieval and generation logic, exposing RESTful endpoints.
-- **Frontend with Streamlit**: Provides a user-friendly interface for interacting with the system.
-- **Retrieval-Augmented Generation (RAG)**: Combines document retrieval with language generation to produce informative responses.
-- **Advanced Language Models**: Integration with GPT, Claude, and Gemini models.
-- **Docker Containers**: Facilitates deployment and execution in isolated environments.
-- **Docker Compose Orchestration**: Simplifies configuration and running of multiple containers.
-
 ## Project Structure
 ```bash
 Huma.ai-GenAI-System/
@@ -66,21 +57,6 @@ Huma.ai-GenAI-System/
 └── README.md
 
 ```
-
-### Description of Directories and Files
-
-- **backend/**: Contains the FastAPI application and RAG logic.
-  - **app/**: Backend source code.
-  - **data/**: Dataset used by the retriever.
-  - **.env**: Environment variables for the backend.
-  - **Dockerfile**: Instructions to build the backend Docker image.
-  - **requirements.txt**: Python dependencies for the backend.
-- **frontend/**: Contains the Streamlit application.
-  - **app.py**: Frontend source code.
-  - **Dockerfile**: Instructions to build the frontend Docker image.
-  - **requirements.txt**: Python dependencies for the frontend.
-- **docker-compose.yml**: Orchestrates the Docker containers.
-- **README.md**: Project documentation.
 
 ## Prerequisites
 
